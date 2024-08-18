@@ -8,7 +8,7 @@ class MainPage(BasePage):
     def go_to(self, link):
         self.driver.get(link)
 
-    @allure.step('Нажимаем на вопрос')
+    @allure.step('Кликаем на вопрос')
     def click_to_question(self, locator, num):
         method, locator = locator
         locator = locator.format(num)
